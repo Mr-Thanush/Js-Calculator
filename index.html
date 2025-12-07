@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js-Calculator</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <button data-number="DEL" class="icon1" id="clearOne"><i class="fa-solid fa-arrow-right"></i></button>
+            <button data-number="CL" class="icon2" id="clearAll">CL</button>
+            <button class="icon3" id="toggleMode"><i class="fa-solid fa-moon"></i></button>
+            <button class="icon4" id="history"><i class="fa-solid fa-clock-rotate-left"></i><ul class="history-list"></ul></button>
+        </div>
+        <div class="screen">
+            <input readonly class="input" placeholder="0"/>
+             </div>
+            <div class="keys">
+                <button data-number="7" class="number" id="num7">7</button>
+                <button data-number="8" class="number" id="num8">8</button>
+                <button data-number="9" class="number" id="num9">9</button>
+                <button data-number="+" class="operator" id="add">+</button>
+
+                <button data-number="4" class="number" id="num4">4</button>
+                <button data-number="5" class="number" id="num5">5</button>
+                <button data-number="6" class="number" id="num6">6</button>
+                <button data-number="-" class="operator" id="sub">−</button>
+
+                <button data-number="1" class="number" id="num1">1</button>
+                <button data-number="2" class="number" id="num2">2</button>
+                <button data-number="3" class="number" id="num3">3</button>
+                <button data-number="×" class="operator" id="multi">×</button>
+
+
+                <button data-number="("  class="science" id="openParen">(</button>
+                <button data-number="0"  class="number" id="num0">0</button>
+                <button data-number=")"  class="science" id="closeParen">)</button>
+                <button data-number="÷"  class="operator" id="div">÷</button>
+
+                <button data-number="sin"  class="science" id="sin">sin</button>
+                <button data-number="cos"  class="science" id="cos">cos</button>
+                <button data-number="tan" class="science" id="tan">tan</button>
+                <button  class="equal" id="equal">=</button>
+
+
+                <button data-number="√" class="science" id="root">√</button>
+                <button data-number="!" class="science" id="factorial">!</button>
+                <button data-number="^" class="science" id="power">^</button>
+                <button data-number="." class="science" id="decimal">.</button>
+        </div> 
+        <div class="history">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

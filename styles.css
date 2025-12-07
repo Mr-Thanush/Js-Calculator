@@ -1,0 +1,241 @@
+body {
+    background-color: rgb(87, 17, 1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:0;
+    margin:0;
+}
+
+.container {
+    width:50vw;
+    background-color:wheat;
+    height:60vh;
+    margin: 150px auto;
+   border-radius: 20px;
+   box-shadow: 0 0 20px black;
+}
+
+.screen {
+    display: block;
+    width:49vw;
+    background-color:wheat;
+    height:10vh;
+    margin: auto;
+    border-radius: 5px;
+    border: 2px solid black;  
+   
+}
+
+.input {
+    width:48.5vw;
+    background: transparent;
+    height:10vh;
+    margin:auto;
+    outline: none;
+    text-align:right;
+    border: none;
+}
+
+input {
+    font-size: 2.5rem;
+    padding: 0;
+    margin:0;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3px;
+    z-index: 99;
+    position: relative;
+    top:1%;
+    width: 96%;
+    height:40vh;
+    margin: auto;
+}
+
+button {
+    background-color:black;
+    color: white;
+    height: 55px;
+    margin: 0;
+    border-radius: 10px;
+    font-size: 25px;
+    box-shadow: 0 0 5px black;
+}
+
+button:hover {
+    background-color:grey;
+}
+
+.operator {
+     background-color: orange;
+}
+
+.operator:hover {
+    background-color:rgb(250, 209, 4);
+}
+
+.equal {
+    background-color: green;
+}
+
+.equal:hover {
+    background-color: rgb(48, 244, 52);
+}
+
+.science {
+    background-color: rgb(41, 40, 40);
+}
+
+.science:hover {
+     background-color: black;
+}
+
+.nav {
+    display: flex;
+    gap:10px;
+
+}
+
+.icon1,.icon2{
+    width:50px;
+    margin: 0;
+    position: relative;
+    left:5px;
+    top:5px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: black;
+    cursor: pointer;
+    transition:all 0.2ms ease;
+}
+
+.icon3,.icon4 {
+    width:50px;
+    margin: 0;
+    position: relative;
+    left:130px;
+    top:5px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: black;
+    cursor: pointer;
+    transition:all 0.2ms ease;
+}
+
+.icon4.active {
+    position: relative;
+    top:17px;
+    
+}
+
+.icon4 ul {
+    background-color:wheat;
+    box-shadow: 0 0 20px black;
+    width: 40vw;
+    height: 50vh;
+    display:none;
+    position: relative;
+    right:285px;
+    top:10%;
+    border-radius: 20px;
+    margin: auto;
+    z-index: 999;
+    
+}
+
+
+.icon4.active ul{
+   display: block;
+}
+
+.icon1:hover,.icon2:hover,.icon3:hover,.icon4:hover {
+    background:transparent;
+}
+
+.dark-theme .container{
+    background-color: black;
+    color: white;
+}
+
+.dark-theme .screen{
+     background-color: black;
+    color: white;
+    border: 2px solid white;  
+}
+
+.dark-theme .nav i {
+    color:white;
+}
+
+.dark-theme .nav .icon2 {
+    color:white;
+}
+
+.dark-theme input {
+    color:white;
+}
+
+body.dark-theme  {
+    background-color: rgb(33, 10, 2);
+}
+
+.dark-theme ul {
+    background-color: rgb(48, 20, 11);
+}
+
+#history.active{
+    display: block;
+}
+
+.active #history {
+    display: block;
+}
+
+.history-list {
+    list-style: none;
+}
+
+ul li {
+    width:45vw;
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+    position: relative;
+    top:5px;
+    right: 37px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+li button {
+    background-color:transparent;
+    width: 55px;
+    border: none;
+    box-shadow: none;
+    margin-left: 0px;
+     font-size: 1rem;
+
+}
+
+.dark-theme li {
+    color:white;
+}
+
+
+
+ul li {
+  font-size: 1rem;
+ color:black;
+}
+
+
+
+li button:hover {
+    background: transparent;
+    color: red;
+}
+
