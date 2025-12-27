@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    width:50vw;
+    width:100vw;
     background-color:wheat;
     height:60vh;
     margin: 150px auto;
@@ -16,7 +16,7 @@ body {
 
 .screen {
     display: block;
-    width:49vw;
+    width:99vw;
     background-color:wheat;
     height:10vh;
     margin: auto;
@@ -26,7 +26,7 @@ body {
 }
 
 .input {
-    width:48.5vw;
+    width:98vw;
     background: transparent;
     height:10vh;
     margin:auto;
@@ -93,15 +93,14 @@ button:hover {
 
 .nav {
     display: flex;
-    gap:10px;
+    gap:30px;
 
 }
 
 .icon1,.icon2{
-    width:50px;
+    width:80px;
     margin: 0;
     position: relative;
-    left:5px;
     top:5px;
     background: transparent;
     border: none;
@@ -112,10 +111,9 @@ button:hover {
 }
 
 .icon3,.icon4 {
-    width:50px;
+    width:60px;
     margin: 0;
     position: relative;
-    left:130px;
     top:5px;
     background: transparent;
     border: none;
@@ -128,17 +126,16 @@ button:hover {
 .icon4.active {
     position: relative;
     top:17px;
-    
 }
 
 .icon4 ul {
     background-color:wheat;
     box-shadow: 0 0 20px black;
-    width: 40vw;
+    width: 80vw;
     height: 50vh;
     display:none;
     position: relative;
-    right:285px;
+    right:330px;
     top:10%;
     border-radius: 20px;
     margin: auto;
@@ -199,13 +196,12 @@ body.dark-theme  {
 }
 
 ul li {
-    width:45vw;
+    width:80vw;
     border-radius: 20px;
     margin: auto;
     display: flex;
     position: relative;
     top:5px;
-    right: 37px;
     justify-content: center;
     align-items: center;
     gap: 50px;
@@ -237,5 +233,75 @@ ul li {
 li button:hover {
     background: transparent;
     color: red;
+}
+
+@media screen and (min-width:500px) {
+.container {
+    width:70vw;
+    background-color:wheat;
+    height:60vh;
+    margin: 150px auto;
+   border-radius: 20px;
+   box-shadow: 0 0 20px black;
+}
+
+.screen {
+    display: block;
+    width:69vw;
+    background-color:wheat;
+    height:10vh;
+    margin: auto;
+    border-radius: 5px;
+    border: 2px solid black;  
+   
+}
+
+.input {
+    width:68vw;
+    background: transparent;
+    height:10vh;
+    margin:auto;
+    outline: none;
+    text-align:right;
+    border: none;
+}
+
+
+}
+
+
+
+@media screen and (min-width:1000px) {
+.container {
+    width:50vw;
+    background-color:wheat;
+    height:60vh;
+    margin: 150px auto;
+   border-radius: 20px;
+   box-shadow: 0 0 20px black;
+}
+
+.screen {
+    display: block;
+    width:49vw;
+    background-color:wheat;
+    height:10vh;
+    margin: auto;
+    border-radius: 5px;
+    border: 2px solid black;  
+   
+}
+
+.input {
+    width:48vw;
+    background: transparent;
+    height:10vh;
+    margin:auto;
+    outline: none;
+    text-align:right;
+    border: none;
+}
+
+
 }
 
