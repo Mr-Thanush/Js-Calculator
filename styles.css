@@ -235,6 +235,53 @@ li button:hover {
     color: red;
 }
 
+@media screen and (min-width:360px) {
+.container {
+    width:90vw;
+    background-color:wheat;
+    height:73vh;
+    margin: 100px auto;
+   border-radius: 20px;
+   box-shadow: 0 0 20px black;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 4px;
+    z-index: 99;
+    position: relative;
+    top:1%;
+    width: 95%;
+    height:40vh;
+    margin: auto;
+}
+
+.screen {
+    display: block;
+    width:89vw;
+    background-color:wheat;
+    height:10vh;
+    margin: auto;
+    border-radius: 5px;
+    border: 2px solid black;  
+   
+}
+
+.input {
+    width:87vw;
+    background: transparent;
+    height:10vh;
+    margin:auto;
+    outline: none;
+    text-align:right;
+    border: none;
+}
+
+
+}
+
+
 @media screen and (min-width:500px) {
 .container {
     width:70vw;
