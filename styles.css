@@ -251,7 +251,7 @@ li button:hover {
     gap: 4px;
     z-index: 99;
     position: relative;
-    top:1%;
+    top:3%;
     width: 95%;
     height:40vh;
     margin: auto;
